@@ -6,6 +6,17 @@ function setup() {
 function draw() {
     background(220);
 
-    fill(255, 255, 255);
-    ellipse(400, 400, 200);
+if (mouseX > 0 && mouseX < width/2) {
+    fill(255, 255, 0)    
+    ellipse(300, 300, 50, 50);
+    ellipse(600, 300, 50, 50);
+}
+else {
+    fill(255, 0, 0)
+    ellipse(300, 300, 50, 50);
+    ellipse(600, 300, 50, 50);
+}
+
+
+
 }
